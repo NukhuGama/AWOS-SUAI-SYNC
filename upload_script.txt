@@ -1,0 +1,7 @@
+option batch on
+option confirm off
+option recurse on
+open sftp://username:password@local_ip:2022/ -hostkey="ssh-rsa 3072 86:ea:ad:fb:be:95:66:f1:21:52:6e:53:1d:87:ec:25"
+put -neweronly -nopreservetime -resume "C:\AviMet\history\*" /
+exit
+
